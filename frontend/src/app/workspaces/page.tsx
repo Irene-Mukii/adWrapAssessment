@@ -14,7 +14,24 @@ type WorkspacesTableProps = {
   data: Workspace[];
 };
 
-const WorkspacesTable: React.FC<WorkspacesTableProps> = ({ data = []}) => {
+const mockWorkspaces = [
+  {
+    id: 1,
+    name: "Ogilvy Outdoor",
+    email: "info@ogilvyoutdoor.com",
+    address: "12 Herbert Macaulay Way, Yaba",
+    location: "Lagos Mainland",
+  },
+  {
+    id: 2,
+    name: "Proactive Media",
+    email: "contact@proactive.ng",
+    address: "Plot 14 Wuse Zone 5",
+    location: "Abuja",
+  },
+];
+
+const WorkspacesTable: React.FC<WorkspacesTableProps> = ({ data = mockWorkspaces}) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;

@@ -52,17 +52,17 @@ const WorkspaceForm:  React.FC = () =>{
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8">
+    <div className=" w-100">
       {!showMediaForm ? (
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">
-              Name:
+              Business name:
             </label>
             <input
               type="text"
               id="name"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className=" bg-gray-100 shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Workspace Name"
@@ -76,7 +76,7 @@ const WorkspaceForm:  React.FC = () =>{
             <input
               type="email"
               id="email"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="bg-gray-100 shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Workspace Email"
@@ -90,7 +90,7 @@ const WorkspaceForm:  React.FC = () =>{
             <input
               type="text"
               id="address"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none bg-gray-100 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               value={address}
               onChange={(e) => setAddress(e.target.value)}
               placeholder="Workspace Address"
@@ -104,7 +104,7 @@ const WorkspaceForm:  React.FC = () =>{
             <input
               type="text"
               id="location"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none bg-gray-100 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
               placeholder="Workspace Location"
@@ -113,10 +113,10 @@ const WorkspaceForm:  React.FC = () =>{
           </div>
           <div className="flex items-center justify-between">
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
               type="submit"
             >
-              Save
+              Save and proceed
             </button>
           </div>
         </form>
